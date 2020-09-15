@@ -16,8 +16,14 @@ def get_summ(num_one, num_two):
     """
     Замените pass на ваш код
     """
-    pass
-    
+    # int("3") str(3)
+    # a = num_one + num_two 
+    try:
+      a = int(num_one) + int(num_two)
+      return (a)
+    except(ValueError):
+      return 'пока'
+
 if __name__ == "__main__":
     print(get_summ(2, 2))
     print(get_summ(3, "3"))

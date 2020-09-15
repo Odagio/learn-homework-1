@@ -14,12 +14,25 @@
     Программа: Программирую
     
 """
+dir_quest = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую"}
 
 def ask_user():
     """
     Замените pass на ваш код
     """
-    pass
+    while True:
+      user_say = input('задай вопрос?')
+      print(user_say)
+
+      print(dir_quest.get (user_say))
+      
+      
+      
+      # if user_say == "Как дела":
+      #   print(dir_quest)
+      #   break
+      # else:
+      #   print('Как дела? ')
     
 if __name__ == "__main__":
     ask_user()
